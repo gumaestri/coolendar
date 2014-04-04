@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		947A3CA018EED34400C276E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3C9F18EED34400C276E2 /* Foundation.framework */; };
+		947A3CA218EED34400C276E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA118EED34400C276E2 /* CoreGraphics.framework */; };
+		947A3CA418EED34400C276E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA318EED34400C276E2 /* UIKit.framework */; };
+		947A3CA618EED34400C276E2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA518EED34400C276E2 /* CoreData.framework */; };
+		947A3CAC18EED34400C276E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CAA18EED34400C276E2 /* InfoPlist.strings */; };
+		947A3CAE18EED34400C276E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 947A3CAD18EED34400C276E2 /* main.m */; };
+		947A3CB218EED34400C276E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 947A3CB118EED34400C276E2 /* AppDelegate.m */; };
+		947A3CB518EED34400C276E2 /* coolendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 947A3CB318EED34400C276E2 /* coolendar.xcdatamodeld */; };
+		947A3CB718EED34400C276E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CB618EED34400C276E2 /* Images.xcassets */; };
+		947A3CBE18EED34400C276E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CBD18EED34400C276E2 /* XCTest.framework */; };
+		947A3CBF18EED34400C276E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3C9F18EED34400C276E2 /* Foundation.framework */; };
+		947A3CC018EED34400C276E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA318EED34400C276E2 /* UIKit.framework */; };
+		947A3CC118EED34400C276E2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA518EED34400C276E2 /* CoreData.framework */; };
+		947A3CC918EED34500C276E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CC718EED34500C276E2 /* InfoPlist.strings */; };
+		947A3CCB18EED34500C276E2 /* coolendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 947A3CCA18EED34500C276E2 /* coolendarTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		947A3CC218EED34400C276E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 947A3C9418EED34400C276E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 947A3C9B18EED34400C276E2;
+			remoteInfo = coolendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		947A3C9C18EED34400C276E2 /* coolendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coolendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		947A3C9F18EED34400C276E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		947A3CA118EED34400C276E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		947A3CA318EED34400C276E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		947A3CA518EED34400C276E2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		947A3CA918EED34400C276E2 /* coolendar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "coolendar-Info.plist"; sourceTree = "<group>"; };
+		947A3CAB18EED34400C276E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		947A3CAD18EED34400C276E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		947A3CAF18EED34400C276E2 /* coolendar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "coolendar-Prefix.pch"; sourceTree = "<group>"; };
+		947A3CB018EED34400C276E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		947A3CB118EED34400C276E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		947A3CB418EED34400C276E2 /* coolendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coolendar.xcdatamodel; sourceTree = "<group>"; };
+		947A3CB618EED34400C276E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		947A3CBC18EED34400C276E2 /* coolendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coolendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		947A3CBD18EED34400C276E2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		947A3CC618EED34500C276E2 /* coolendarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "coolendarTests-Info.plist"; sourceTree = "<group>"; };
+		947A3CC818EED34500C276E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		947A3CCA18EED34500C276E2 /* coolendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coolendarTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		947A3C9918EED34400C276E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947A3CA218EED34400C276E2 /* CoreGraphics.framework in Frameworks */,
+				947A3CA618EED34400C276E2 /* CoreData.framework in Frameworks */,
+				947A3CA418EED34400C276E2 /* UIKit.framework in Frameworks */,
+				947A3CA018EED34400C276E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		947A3CB918EED34400C276E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947A3CBE18EED34400C276E2 /* XCTest.framework in Frameworks */,
+				947A3CC118EED34400C276E2 /* CoreData.framework in Frameworks */,
+				947A3CC018EED34400C276E2 /* UIKit.framework in Frameworks */,
+				947A3CBF18EED34400C276E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		947A3C9318EED34400C276E2 = {
+			isa = PBXGroup;
+			children = (
+				947A3CA718EED34400C276E2 /* coolendar */,
+				947A3CC418EED34400C276E2 /* coolendarTests */,
+				947A3C9E18EED34400C276E2 /* Frameworks */,
+				947A3C9D18EED34400C276E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		947A3C9D18EED34400C276E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				947A3C9C18EED34400C276E2 /* coolendar.app */,
+				947A3CBC18EED34400C276E2 /* coolendarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		947A3C9E18EED34400C276E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				947A3C9F18EED34400C276E2 /* Foundation.framework */,
+				947A3CA118EED34400C276E2 /* CoreGraphics.framework */,
+				947A3CA318EED34400C276E2 /* UIKit.framework */,
+				947A3CA518EED34400C276E2 /* CoreData.framework */,
+				947A3CBD18EED34400C276E2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		947A3CA718EED34400C276E2 /* coolendar */ = {
+			isa = PBXGroup;
+			children = (
+				947A3CB018EED34400C276E2 /* AppDelegate.h */,
+				947A3CB118EED34400C276E2 /* AppDelegate.m */,
+				947A3CB618EED34400C276E2 /* Images.xcassets */,
+				947A3CB318EED34400C276E2 /* coolendar.xcdatamodeld */,
+				947A3CA818EED34400C276E2 /* Supporting Files */,
+			);
+			path = coolendar;
+			sourceTree = "<group>";
+		};
+		947A3CA818EED34400C276E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				947A3CA918EED34400C276E2 /* coolendar-Info.plist */,
+				947A3CAA18EED34400C276E2 /* InfoPlist.strings */,
+				947A3CAD18EED34400C276E2 /* main.m */,
+				947A3CAF18EED34400C276E2 /* coolendar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		947A3CC418EED34400C276E2 /* coolendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				947A3CCA18EED34500C276E2 /* coolendarTests.m */,
+				947A3CC518EED34500C276E2 /* Supporting Files */,
+			);
+			path = coolendarTests;
+			sourceTree = "<group>";
+		};
+		947A3CC518EED34500C276E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				947A3CC618EED34500C276E2 /* coolendarTests-Info.plist */,
+				947A3CC718EED34500C276E2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		947A3C9B18EED34400C276E2 /* coolendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947A3CCE18EED34500C276E2 /* Build configuration list for PBXNativeTarget "coolendar" */;
+			buildPhases = (
+				947A3C9818EED34400C276E2 /* Sources */,
+				947A3C9918EED34400C276E2 /* Frameworks */,
+				947A3C9A18EED34400C276E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coolendar;
+			productName = coolendar;
+			productReference = 947A3C9C18EED34400C276E2 /* coolendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		947A3CBB18EED34400C276E2 /* coolendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947A3CD118EED34500C276E2 /* Build configuration list for PBXNativeTarget "coolendarTests" */;
+			buildPhases = (
+				947A3CB818EED34400C276E2 /* Sources */,
+				947A3CB918EED34400C276E2 /* Frameworks */,
+				947A3CBA18EED34400C276E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				947A3CC318EED34400C276E2 /* PBXTargetDependency */,
+			);
+			name = coolendarTests;
+			productName = coolendarTests;
+			productReference = 947A3CBC18EED34400C276E2 /* coolendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		947A3C9418EED34400C276E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Aerochimps;
+				TargetAttributes = {
+					947A3CBB18EED34400C276E2 = {
+						TestTargetID = 947A3C9B18EED34400C276E2;
+					};
+				};
+			};
+			buildConfigurationList = 947A3C9718EED34400C276E2 /* Build configuration list for PBXProject "coolendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 947A3C9318EED34400C276E2;
+			productRefGroup = 947A3C9D18EED34400C276E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				947A3C9B18EED34400C276E2 /* coolendar */,
+				947A3CBB18EED34400C276E2 /* coolendarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		947A3C9A18EED34400C276E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947A3CAC18EED34400C276E2 /* InfoPlist.strings in Resources */,
+				947A3CB718EED34400C276E2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		947A3CBA18EED34400C276E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947A3CC918EED34500C276E2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		947A3C9818EED34400C276E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947A3CB518EED34400C276E2 /* coolendar.xcdatamodeld in Sources */,
+				947A3CB218EED34400C276E2 /* AppDelegate.m in Sources */,
+				947A3CAE18EED34400C276E2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		947A3CB818EED34400C276E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947A3CCB18EED34500C276E2 /* coolendarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		947A3CC318EED34400C276E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 947A3C9B18EED34400C276E2 /* coolendar */;
+			targetProxy = 947A3CC218EED34400C276E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		947A3CAA18EED34400C276E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				947A3CAB18EED34400C276E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		947A3CC718EED34500C276E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				947A3CC818EED34500C276E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		947A3CCC18EED34500C276E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		947A3CCD18EED34500C276E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		947A3CCF18EED34500C276E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coolendar/coolendar-Prefix.pch";
+				INFOPLIST_FILE = "coolendar/coolendar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		947A3CD018EED34500C276E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coolendar/coolendar-Prefix.pch";
+				INFOPLIST_FILE = "coolendar/coolendar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		947A3CD218EED34500C276E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/coolendar.app/coolendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coolendar/coolendar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "coolendarTests/coolendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		947A3CD318EED34500C276E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/coolendar.app/coolendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coolendar/coolendar-Prefix.pch";
+				INFOPLIST_FILE = "coolendarTests/coolendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		947A3C9718EED34400C276E2 /* Build configuration list for PBXProject "coolendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947A3CCC18EED34500C276E2 /* Debug */,
+				947A3CCD18EED34500C276E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		947A3CCE18EED34500C276E2 /* Build configuration list for PBXNativeTarget "coolendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947A3CCF18EED34500C276E2 /* Debug */,
+				947A3CD018EED34500C276E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		947A3CD118EED34500C276E2 /* Build configuration list for PBXNativeTarget "coolendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947A3CD218EED34500C276E2 /* Debug */,
+				947A3CD318EED34500C276E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		947A3CB318EED34400C276E2 /* coolendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				947A3CB418EED34400C276E2 /* coolendar.xcdatamodel */,
+			);
+			currentVersion = 947A3CB418EED34400C276E2 /* coolendar.xcdatamodel */;
+			path = coolendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 947A3C9418EED34400C276E2 /* Project object */;
+}
