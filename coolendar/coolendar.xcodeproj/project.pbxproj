@@ -22,6 +22,13 @@
 		947A3CC118EED34400C276E2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA518EED34400C276E2 /* CoreData.framework */; };
 		947A3CC918EED34500C276E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CC718EED34500C276E2 /* InfoPlist.strings */; };
 		947A3CCB18EED34500C276E2 /* coolendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 947A3CCA18EED34500C276E2 /* coolendarTests.m */; };
+		947A3CDB18F2E92400C276E2 /* CoolendarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CDA18F2E92400C276E2 /* CoolendarStoryboard.storyboard */; };
+		947A3CDE18F2EAAF00C276E2 /* login-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CDC18F2EAAF00C276E2 /* login-button.png */; };
+		947A3CDF18F2EAAF00C276E2 /* login-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CDD18F2EAAF00C276E2 /* login-button@2x.png */; };
+		947A3CE318F2EC1A00C276E2 /* umbrella.png in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CE118F2EC1A00C276E2 /* umbrella.png */; };
+		947A3CE418F2EC1A00C276E2 /* umbrella@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CE218F2EC1A00C276E2 /* umbrella@2x.png */; };
+		947A3CE718F2ECB000C276E2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CE518F2ECB000C276E2 /* logo.png */; };
+		947A3CE818F2ECB000C276E2 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CE618F2ECB000C276E2 /* logo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		947A3CC618EED34500C276E2 /* coolendarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "coolendarTests-Info.plist"; sourceTree = "<group>"; };
 		947A3CC818EED34500C276E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		947A3CCA18EED34500C276E2 /* coolendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coolendarTests.m; sourceTree = "<group>"; };
+		947A3CDA18F2E92400C276E2 /* CoolendarStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CoolendarStoryboard.storyboard; sourceTree = "<group>"; };
+		947A3CDC18F2EAAF00C276E2 /* login-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button.png"; sourceTree = "<group>"; };
+		947A3CDD18F2EAAF00C276E2 /* login-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button@2x.png"; sourceTree = "<group>"; };
+		947A3CE118F2EC1A00C276E2 /* umbrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = umbrella.png; sourceTree = "<group>"; };
+		947A3CE218F2EC1A00C276E2 /* umbrella@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "umbrella@2x.png"; sourceTree = "<group>"; };
+		947A3CE518F2ECB000C276E2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		947A3CE618F2ECB000C276E2 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +129,12 @@
 		947A3CA718EED34400C276E2 /* coolendar */ = {
 			isa = PBXGroup;
 			children = (
-				947A3CB018EED34400C276E2 /* AppDelegate.h */,
-				947A3CB118EED34400C276E2 /* AppDelegate.m */,
-				947A3CB618EED34400C276E2 /* Images.xcassets */,
-				947A3CB318EED34400C276E2 /* coolendar.xcdatamodeld */,
+				947A3CD918F2E8C300C276E2 /* resources */,
+				947A3CD818F2E89300C276E2 /* view */,
+				947A3CD718F2E88100C276E2 /* services */,
+				947A3CD618F2E87500C276E2 /* delegate */,
+				947A3CD518F2E86500C276E2 /* controller */,
+				947A3CD418F2E85E00C276E2 /* model */,
 				947A3CA818EED34400C276E2 /* Supporting Files */,
 			);
 			path = coolendar;
@@ -151,6 +167,67 @@
 				947A3CC718EED34500C276E2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		947A3CD418F2E85E00C276E2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				947A3CB318EED34400C276E2 /* coolendar.xcdatamodeld */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		947A3CD518F2E86500C276E2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		947A3CD618F2E87500C276E2 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				947A3CB018EED34400C276E2 /* AppDelegate.h */,
+				947A3CB118EED34400C276E2 /* AppDelegate.m */,
+			);
+			name = delegate;
+			sourceTree = "<group>";
+		};
+		947A3CD718F2E88100C276E2 /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		947A3CD818F2E89300C276E2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				947A3CDA18F2E92400C276E2 /* CoolendarStoryboard.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		947A3CD918F2E8C300C276E2 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				947A3CE018F2EAF000C276E2 /* images */,
+				947A3CB618EED34400C276E2 /* Images.xcassets */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		947A3CE018F2EAF000C276E2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				947A3CE518F2ECB000C276E2 /* logo.png */,
+				947A3CE618F2ECB000C276E2 /* logo@2x.png */,
+				947A3CE118F2EC1A00C276E2 /* umbrella.png */,
+				947A3CE218F2EC1A00C276E2 /* umbrella@2x.png */,
+				947A3CDC18F2EAAF00C276E2 /* login-button.png */,
+				947A3CDD18F2EAAF00C276E2 /* login-button@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +305,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947A3CDB18F2E92400C276E2 /* CoolendarStoryboard.storyboard in Resources */,
+				947A3CE418F2EC1A00C276E2 /* umbrella@2x.png in Resources */,
+				947A3CDE18F2EAAF00C276E2 /* login-button.png in Resources */,
 				947A3CAC18EED34400C276E2 /* InfoPlist.strings in Resources */,
+				947A3CE718F2ECB000C276E2 /* logo.png in Resources */,
+				947A3CE318F2EC1A00C276E2 /* umbrella.png in Resources */,
+				947A3CDF18F2EAAF00C276E2 /* login-button@2x.png in Resources */,
+				947A3CE818F2ECB000C276E2 /* logo@2x.png in Resources */,
 				947A3CB718EED34400C276E2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
