@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="-2" y="59"/>
         </scene>
-        <!--View Controller - Item 1-->
+        <!--Events View Controller - all-->
         <scene sceneID="dQc-2t-o3Z">
             <objects>
-                <viewController id="ZI3-gT-5R4" sceneMemberID="viewController">
+                <viewController title="all" id="ZI3-gT-5R4" customClass="EventsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pgv-nh-Hj8"/>
                         <viewControllerLayoutGuide type="bottom" id="zgs-Dx-fII"/>
@@ -71,11 +71,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Hmb-CN-ZWt"/>
+                    <tabBarItem key="tabBarItem" title="all" image="toolbar-all" id="Hmb-CN-ZWt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dv7-RL-s3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="-180"/>
+            <point key="canvasLocation" x="1046" y="-493"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Usp-fu-ZGb">
@@ -91,16 +91,76 @@
                     <connections>
                         <segue destination="ZI3-gT-5R4" kind="relationship" relationship="viewControllers" id="RGV-dP-wXF"/>
                         <segue destination="bt0-gD-sMy" kind="relationship" relationship="viewControllers" id="L2t-nH-e8K"/>
+                        <segue destination="bEs-PL-IOB" kind="relationship" relationship="viewControllers" id="IhW-9R-whN"/>
+                        <segue destination="7Zl-nX-Eka" kind="relationship" relationship="viewControllers" id="tD0-j0-eh9"/>
+                        <segue destination="G2a-lL-OMz" kind="relationship" relationship="viewControllers" id="jiT-Bu-ett"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chy-cX-xN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="430" y="59"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--Tomorrow Events View Controller - tomorrow-->
+        <scene sceneID="awx-gp-mfP">
+            <objects>
+                <viewController id="7Zl-nX-Eka" customClass="TomorrowEventsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skO-Ng-Hn5"/>
+                        <viewControllerLayoutGuide type="bottom" id="rb2-nT-xan"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="54k-aq-J3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="tomorrow" image="toolbar-tomorrow" id="Ca3-S9-Rn8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsU-H1-Kd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="1464"/>
+        </scene>
+        <!--Week Events View Controller - week-->
+        <scene sceneID="fF6-Ug-yvm">
+            <objects>
+                <viewController id="G2a-lL-OMz" customClass="WeekEventsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vs8-2n-VsJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bp7-gR-oAq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wiJ-6h-Qyw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="week" image="toolbar-week" id="ffu-2r-cAv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHF-LT-z26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="2126"/>
+        </scene>
+        <!--Today Events View Controller - today-->
+        <scene sceneID="czX-34-Jud">
+            <objects>
+                <viewController id="bEs-PL-IOB" customClass="TodayEventsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yiw-dN-ya7"/>
+                        <viewControllerLayoutGuide type="bottom" id="R3n-zt-JTe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jLt-ZN-5SR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="today" image="toolbar-today" id="8sM-lQ-Jpr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfP-mP-xNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="811"/>
+        </scene>
+        <!--Important Events View Controller - important-->
         <scene sceneID="Q2g-II-SwE">
             <objects>
-                <viewController id="bt0-gD-sMy" sceneMemberID="viewController">
+                <viewController id="bt0-gD-sMy" customClass="ImportantEventsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7x0-sA-7fW"/>
                         <viewControllerLayoutGuide type="bottom" id="J8F-37-dJ1"/>
@@ -110,16 +170,21 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Cvp-7Z-Pn5"/>
+                    <tabBarItem key="tabBarItem" title="important" image="toolbar-important" id="Cvp-7Z-Pn5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdE-qZ-VRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="501"/>
+            <point key="canvasLocation" x="1046" y="156"/>
         </scene>
     </scenes>
     <resources>
         <image name="login-button" width="284" height="57"/>
         <image name="logo" width="195" height="53"/>
+        <image name="toolbar-all" width="30" height="30"/>
+        <image name="toolbar-important" width="30" height="30"/>
+        <image name="toolbar-today" width="30" height="30"/>
+        <image name="toolbar-tomorrow" width="30" height="30"/>
+        <image name="toolbar-week" width="30" height="30"/>
         <image name="umbrella" width="222" height="186"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
