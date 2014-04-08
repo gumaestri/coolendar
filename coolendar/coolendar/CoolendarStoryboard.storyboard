@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QJh-Nu-2t3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v9x-KZ-p3f">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="r6g-t3-IFp">
+            <objects>
+                <navigationController storyboardIdentifier="CoolendarStoryboard" definesPresentationContext="YES" navigationBarHidden="YES" id="v9x-KZ-p3f" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QD4-D4-Ocq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QJh-Nu-2t3" kind="relationship" relationship="rootViewController" id="wm6-33-TlP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPb-ag-oVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="59"/>
+        </scene>
+        <!--Login View Controller-->
         <scene sceneID="18H-5J-qB5">
             <objects>
-                <viewController id="QJh-Nu-2t3" sceneMemberID="viewController">
+                <viewController id="QJh-Nu-2t3" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KBV-M2-Sq9"/>
                         <viewControllerLayoutGuide type="bottom" id="T0L-12-xTR"/>
@@ -24,7 +40,7 @@
                                     <segue destination="HZS-tW-cmp" kind="push" id="wt8-u2-l16"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="ToE-ir-AqS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="CoolendarStoryboard" image="umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="ToE-ir-AqS">
                                 <rect key="frame" x="49" y="136" width="222" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -35,6 +51,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gyV-vv-Obk"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A18-cg-RgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

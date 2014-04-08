@@ -29,6 +29,7 @@
 		947A3CE418F2EC1A00C276E2 /* umbrella@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CE218F2EC1A00C276E2 /* umbrella@2x.png */; };
 		947A3CE718F2ECB000C276E2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CE518F2ECB000C276E2 /* logo.png */; };
 		947A3CE818F2ECB000C276E2 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 947A3CE618F2ECB000C276E2 /* logo@2x.png */; };
+		947A3D2C18F4088100C276E2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 947A3D2B18F4088100C276E2 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		947A3CE218F2EC1A00C276E2 /* umbrella@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "umbrella@2x.png"; sourceTree = "<group>"; };
 		947A3CE518F2ECB000C276E2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		947A3CE618F2ECB000C276E2 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		947A3D2A18F4088100C276E2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		947A3D2B18F4088100C276E2 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 		947A3CD518F2E86500C276E2 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				947A3D2A18F4088100C276E2 /* LoginViewController.h */,
+				947A3D2B18F4088100C276E2 /* LoginViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947A3D2C18F4088100C276E2 /* LoginViewController.m in Sources */,
 				947A3CB518EED34400C276E2 /* coolendar.xcdatamodeld in Sources */,
 				947A3CB218EED34400C276E2 /* AppDelegate.m in Sources */,
 				947A3CAE18EED34400C276E2 /* main.m in Sources */,
