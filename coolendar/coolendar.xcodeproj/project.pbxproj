@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		941F26B218F55EAA00CFE40B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26B118F55EAA00CFE40B /* AddressBook.framework */; };
+		941F26B418F55EB000CFE40B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26B318F55EB000CFE40B /* AssetsLibrary.framework */; };
+		941F26B618F55EBF00CFE40B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26B518F55EBF00CFE40B /* CoreLocation.framework */; };
+		941F26B818F55ECD00CFE40B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26B718F55ECD00CFE40B /* CoreMotion.framework */; };
+		941F26BA18F55EDB00CFE40B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26B918F55EDB00CFE40B /* CoreText.framework */; };
+		941F26BC18F55EE900CFE40B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26BB18F55EE900CFE40B /* MediaPlayer.framework */; };
+		941F26BE18F55EF800CFE40B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26BD18F55EF800CFE40B /* Security.framework */; };
+		941F26C018F55F0A00CFE40B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26BF18F55F0A00CFE40B /* SystemConfiguration.framework */; };
+		941F26C218F55F6900CFE40B /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26C118F55F6900CFE40B /* GooglePlus.framework */; };
+		941F26C418F55F7C00CFE40B /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26C318F55F7C00CFE40B /* GoogleOpenSource.framework */; };
+		941F26C618F55FA100CFE40B /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 941F26C518F55FA100CFE40B /* GooglePlus.bundle */; };
 		947A3CA018EED34400C276E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3C9F18EED34400C276E2 /* Foundation.framework */; };
 		947A3CA218EED34400C276E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA118EED34400C276E2 /* CoreGraphics.framework */; };
 		947A3CA418EED34400C276E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA318EED34400C276E2 /* UIKit.framework */; };
@@ -58,6 +69,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		941F26B118F55EAA00CFE40B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		941F26B318F55EB000CFE40B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		941F26B518F55EBF00CFE40B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		941F26B718F55ECD00CFE40B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		941F26B918F55EDB00CFE40B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		941F26BB18F55EE900CFE40B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		941F26BD18F55EF800CFE40B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		941F26BF18F55F0A00CFE40B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		941F26C118F55F6900CFE40B /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		941F26C318F55F7C00CFE40B /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		941F26C518F55FA100CFE40B /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		947A3C9C18EED34400C276E2 /* coolendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coolendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947A3C9F18EED34400C276E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		947A3CA118EED34400C276E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +134,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941F26C018F55F0A00CFE40B /* SystemConfiguration.framework in Frameworks */,
+				941F26BE18F55EF800CFE40B /* Security.framework in Frameworks */,
+				941F26BC18F55EE900CFE40B /* MediaPlayer.framework in Frameworks */,
+				941F26BA18F55EDB00CFE40B /* CoreText.framework in Frameworks */,
+				941F26B818F55ECD00CFE40B /* CoreMotion.framework in Frameworks */,
+				941F26C218F55F6900CFE40B /* GooglePlus.framework in Frameworks */,
+				941F26B618F55EBF00CFE40B /* CoreLocation.framework in Frameworks */,
+				941F26B418F55EB000CFE40B /* AssetsLibrary.framework in Frameworks */,
+				941F26C418F55F7C00CFE40B /* GoogleOpenSource.framework in Frameworks */,
+				941F26B218F55EAA00CFE40B /* AddressBook.framework in Frameworks */,
 				947A3CA218EED34400C276E2 /* CoreGraphics.framework in Frameworks */,
 				947A3CA618EED34400C276E2 /* CoreData.framework in Frameworks */,
 				947A3CA418EED34400C276E2 /* UIKit.framework in Frameworks */,
@@ -155,6 +187,17 @@
 		947A3C9E18EED34400C276E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				941F26C518F55FA100CFE40B /* GooglePlus.bundle */,
+				941F26C318F55F7C00CFE40B /* GoogleOpenSource.framework */,
+				941F26C118F55F6900CFE40B /* GooglePlus.framework */,
+				941F26BF18F55F0A00CFE40B /* SystemConfiguration.framework */,
+				941F26BD18F55EF800CFE40B /* Security.framework */,
+				941F26BB18F55EE900CFE40B /* MediaPlayer.framework */,
+				941F26B918F55EDB00CFE40B /* CoreText.framework */,
+				941F26B718F55ECD00CFE40B /* CoreMotion.framework */,
+				941F26B518F55EBF00CFE40B /* CoreLocation.framework */,
+				941F26B318F55EB000CFE40B /* AssetsLibrary.framework */,
+				941F26B118F55EAA00CFE40B /* AddressBook.framework */,
 				947A3C9F18EED34400C276E2 /* Foundation.framework */,
 				947A3CA118EED34400C276E2 /* CoreGraphics.framework */,
 				947A3CA318EED34400C276E2 /* UIKit.framework */,
@@ -371,6 +414,7 @@
 				947A3CDE18F2EAAF00C276E2 /* login-button.png in Resources */,
 				947A3D4018F49CC900C276E2 /* toolbar-week@2x.png in Resources */,
 				947A3D3118F49BE800C276E2 /* toolbar-all.png in Resources */,
+				941F26C618F55FA100CFE40B /* GooglePlus.bundle in Resources */,
 				947A3CAC18EED34400C276E2 /* InfoPlist.strings in Resources */,
 				947A3D3C18F49C1500C276E2 /* toolbar-tomorrow@2x.png in Resources */,
 				947A3D3918F49C1500C276E2 /* toolbar-today.png in Resources */,
@@ -528,9 +572,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coolendar/coolendar-Prefix.pch";
 				INFOPLIST_FILE = "coolendar/coolendar-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -542,9 +591,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coolendar/coolendar-Prefix.pch";
 				INFOPLIST_FILE = "coolendar/coolendar-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -609,6 +663,7 @@
 				947A3CD018EED34500C276E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		947A3CD118EED34500C276E2 /* Build configuration list for PBXNativeTarget "coolendarTests" */ = {
 			isa = XCConfigurationList;
@@ -617,6 +672,7 @@
 				947A3CD318EED34500C276E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
