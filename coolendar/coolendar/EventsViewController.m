@@ -7,6 +7,7 @@
 //
 
 #import "EventsViewController.h"
+#import <GooglePlus/GooglePlus.h>
 
 @interface EventsViewController ()
 
@@ -46,4 +47,8 @@
 }
 */
 
+- (IBAction)logout:(id)sender {
+    [[GPPSignIn sharedInstance] signOut];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

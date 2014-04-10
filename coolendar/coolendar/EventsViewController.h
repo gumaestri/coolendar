@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface EventsViewController : UIViewController<NSFetchedResultsControllerDelegate>
+@interface EventsViewController : UIViewController<NSFetchedResultsControllerDelegate>{
+    
+    __weak IBOutlet UIBarButtonItem *logoutButton;
+}
+- (IBAction)logout:(id)sender;
 
 @end
