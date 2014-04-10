@@ -35,7 +35,7 @@ static NSString * const kClientId = @"738284627367-0seb2nk7q3s8bu7mgne3jbi47ahgs
     // Do any additional setup after loading the view.
     GPPSignIn *signIn = [GPPSignIn sharedInstance];
     signIn.shouldFetchGooglePlusUser = YES;
-    //signIn.shouldFetchGoogleUserEmail = YES;  // Uncomment to get the user's email
+    signIn.shouldFetchGoogleUserEmail = YES; 
     
     // You previously set kClientId in the "Initialize the Google+ client" step
     signIn.clientID = kClientId;

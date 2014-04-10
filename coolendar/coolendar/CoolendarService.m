@@ -7,6 +7,7 @@
 //
 
 #import "CoolendarService.h"
+#import <GoogleOpenSource/GoogleOpenSource.h>
 #import <GooglePlus/GooglePlus.h>
 
 @implementation CoolendarService
@@ -20,17 +21,20 @@
     return sharedInstance;
 }
 
+- (NSMutableURLRequest *)createRequest: (NSString *)method withURL: (NSString *) urlString{
+    NSURL* url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    [request setHTTPMethod:method];
+    GTMOAuth2Authentication *auth = [[GPPSignIn sharedInstance] authentication];
+    [auth authorizeRequest:request];
+    return request;
+}
+
 - (NSString *)getDates{
-    NSURL* url = [NSURL URLWithString:@"http://www.coolendar.com/api/calendar/clock"];
     
     NSHTTPURLResponse* response;
     NSError* error;
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
-	
-    [request setHTTPMethod:@"GET"];
-    
-//    GTMOAuth2Authentication *auth = [[GPPSignIn sharedInstance] authentication];
-//    [auth authorizeRequest:request];
+    NSMutableURLRequest *request = [self createRequest:@"GET" withURL:@"http://www.coolendar.com/api/calendar/clock"];
 	
     NSData* loadData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
 	
@@ -39,20 +43,28 @@
 	
 }
 
-- (void)getEvents:(NSMutableDictionary *)token withDelegate:(id)delegate{
+- (void)getEventsWithDelegate:(id)delegate{
+    NSMutableURLRequest *request = [self createRequest:@"GET" withURL:@"http://www.coolendar.com/api/entry"];
     
+	[NSURLConnection connectionWithRequest:request delegate:delegate];
 }
 
-- (void)addEvent:(NSMutableDictionary *)token withString:(NSString *)event withDelegate:(id)delegate{
+- (void)addEvent:(NSString *)event withDelegate:(id)delegate{
+     NSMutableURLRequest *request = [self createRequest:@"PUT" withURL:[[NSString stringWithFormat:@"http://www.coolendar.com/api/entry?s=%@", event] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
+    [NSURLConnection connectionWithRequest:request delegate:delegate];
 }
 
-- (void)removeEvent:(NSMutableDictionary *)token withString:(NSString *)event withDelegate:(id)delegate{
+- (void)removeEvent:(NSString *)event withDelegate:(id)delegate{
     
+    NSMutableURLRequest *request = [self createRequest:@"DELETE" withURL:[[NSString stringWithFormat:@"http://www.coolendar.com/api/entry/%@", event] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    
+    [NSURLConnection connectionWithRequest:request delegate:delegate];
 }
 
-- (void)toggleImportant:(NSMutableDictionary *)token withString:(NSString *)event withDelegate:(id)delegate{
-    
+- (void)toggleImportant:(NSString *)event withDelegate:(id)delegate{
+    NSMutableURLRequest *request = [self createRequest:@"GET" withURL:[[NSString stringWithFormat:@"http://www.coolendar.com/star?id=%@", event] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    [NSURLConnection connectionWithRequest:request delegate:delegate];
 }
 
 

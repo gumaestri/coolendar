@@ -14,11 +14,11 @@
 
 - (NSString *) getDates;
 
-- (void) getEvents:(NSMutableDictionary *) token withDelegate:(id)delegate;
+- (void) getEventsWithDelegate:(id)delegate;
 
-- (void) addEvent:(NSMutableDictionary *) token withString:(NSString *)event withDelegate:(id)delegate;
+- (void) addEvent:(NSString *)event withDelegate:(id)delegate;
 
-- (void) removeEvent:(NSMutableDictionary *) token withString: (NSString *) event withDelegate:(id)delegate;
-- (void) toggleImportant:(NSMutableDictionary *)token withString:(NSString *)event withDelegate:(id)delegate;
+- (void) removeEvent: (NSString *) event withDelegate:(id)delegate;
+- (void) toggleImportant:(NSString *)event withDelegate:(id)delegate;
 
 @end
