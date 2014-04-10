@@ -12,9 +12,10 @@
 
 @implementation CoolendarService
 
+static CoolendarService *sharedInstance = nil;
+
 + (CoolendarService *)sharedInstance{
     static dispatch_once_t pred = 0;
-    static CoolendarService *sharedInstance = nil;
     dispatch_once(&pred, ^{
         sharedInstance = [[CoolendarService alloc] init];
     });
