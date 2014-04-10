@@ -18,6 +18,7 @@
 		941F26C218F55F6900CFE40B /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26C118F55F6900CFE40B /* GooglePlus.framework */; };
 		941F26C418F55F7C00CFE40B /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F26C318F55F7C00CFE40B /* GoogleOpenSource.framework */; };
 		941F26C618F55FA100CFE40B /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 941F26C518F55FA100CFE40B /* GooglePlus.bundle */; };
+		941F26C918F6F6DD00CFE40B /* CoolendarService.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F26C818F6F6DD00CFE40B /* CoolendarService.m */; };
 		947A3CA018EED34400C276E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3C9F18EED34400C276E2 /* Foundation.framework */; };
 		947A3CA218EED34400C276E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA118EED34400C276E2 /* CoreGraphics.framework */; };
 		947A3CA418EED34400C276E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA318EED34400C276E2 /* UIKit.framework */; };
@@ -80,6 +81,8 @@
 		941F26C118F55F6900CFE40B /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		941F26C318F55F7C00CFE40B /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		941F26C518F55FA100CFE40B /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		941F26C718F6F6DD00CFE40B /* CoolendarService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolendarService.h; sourceTree = "<group>"; };
+		941F26C818F6F6DD00CFE40B /* CoolendarService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolendarService.m; sourceTree = "<group>"; };
 		947A3C9C18EED34400C276E2 /* coolendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coolendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947A3C9F18EED34400C276E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		947A3CA118EED34400C276E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -289,6 +292,8 @@
 		947A3CD718F2E88100C276E2 /* services */ = {
 			isa = PBXGroup;
 			children = (
+				941F26C718F6F6DD00CFE40B /* CoolendarService.h */,
+				941F26C818F6F6DD00CFE40B /* CoolendarService.m */,
 			);
 			name = services;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				947A3D4918F4A22E00C276E2 /* ImportantEventsViewController.m in Sources */,
 				947A3D4F18F4A2BF00C276E2 /* WeekEventsViewController.m in Sources */,
 				947A3CB218EED34400C276E2 /* AppDelegate.m in Sources */,
+				941F26C918F6F6DD00CFE40B /* CoolendarService.m in Sources */,
 				947A3D4C18F4A25400C276E2 /* TomorrowEventsViewController.m in Sources */,
 				947A3CAE18EED34400C276E2 /* main.m in Sources */,
 			);
