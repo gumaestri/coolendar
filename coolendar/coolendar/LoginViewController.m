@@ -8,12 +8,15 @@
 
 #import "LoginViewController.h"
 #import <GoogleOpenSource/GoogleOpenSource.h>
+#import <GooglePlus/GooglePlus.h>
 
 @interface LoginViewController ()
 
 @end
 
 @implementation LoginViewController
+
+@synthesize signInButton;
 
 static NSString * const kClientId = @"738284627367-0seb2nk7q3s8bu7mgne3jbi47ahgskbo.apps.googleusercontent.com";
 
@@ -43,6 +46,8 @@ static NSString * const kClientId = @"738284627367-0seb2nk7q3s8bu7mgne3jbi47ahgs
     
     // Optional: declare signIn.actions, see "app activities"
     signIn.delegate = self;
+    
+    [signIn trySilentAuthentication];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,6 +59,10 @@ static NSString * const kClientId = @"738284627367-0seb2nk7q3s8bu7mgne3jbi47ahgs
 - (void)finishedWithAuth: (GTMOAuth2Authentication *)auth
                    error: (NSError *) error {
     NSLog(@"Received error %@ and auth object %@",error, auth);
+    if ([auth canAuthorize]) {
+        NSLog(@"prepareForSegue Automatic Login");
+        [self performSegueWithIdentifier:@"LoginSegue" sender:nil];
+    }
 }
 
 - (void)presentSignInViewController:(UIViewController *)viewController {
@@ -61,7 +70,18 @@ static NSString * const kClientId = @"738284627367-0seb2nk7q3s8bu7mgne3jbi47ahgs
     [[self navigationController] pushViewController:viewController animated:YES];
 }
 
-/*
+-(void)refreshInterfaceBasedOnSignIn {
+    if ([[GPPSignIn sharedInstance] authentication]) {
+        // The user is signed in.
+        self.signInButton.hidden = YES;
+        [self performSegueWithIdentifier:@"LoginSegue" sender:nil];
+    } else {
+        self.signInButton.hidden = NO;
+        // Perform other actions here
+    }
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -69,7 +89,16 @@ static NSString * const kClientId = @"738284627367-0seb2nk7q3s8bu7mgne3jbi47ahgs
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+     NSLog(@"prepareForSegue %@",[segue destinationViewController]);
 }
-*/
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    if ([[GPPSignIn sharedInstance] authentication]) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 @end

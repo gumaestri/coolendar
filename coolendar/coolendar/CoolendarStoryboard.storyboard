@@ -32,12 +32,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jh-k7-pix">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jh-k7-pix" customClass="GPPSignInButton">
                                 <rect key="frame" x="18" y="365" width="284" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="login-button"/>
                                 <connections>
-                                    <segue destination="HZS-tW-cmp" kind="push" id="wt8-u2-l16"/>
+                                    <segue destination="HZS-tW-cmp" kind="push" identifier="LoginSegue" id="H6q-xX-C9x"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="CoolendarStoryboard" image="umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="ToE-ir-AqS">
@@ -53,6 +53,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="gyV-vv-Obk"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="signInButton" destination="9Jh-k7-pix" id="IN8-Ps-4Fk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A18-cg-RgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
