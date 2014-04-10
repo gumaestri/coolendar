@@ -82,15 +82,6 @@ static NSString * const kClientId = @"738284627367-0seb2nk7q3s8bu7mgne3jbi47ahgs
 }
 
 
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-     NSLog(@"prepareForSegue %@",[segue destinationViewController]);
-}
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
     if ([[GPPSignIn sharedInstance] authentication]) {
