@@ -22,6 +22,8 @@
 		941F26E418F80ADA00CFE40B /* SystemTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F26E318F80ADA00CFE40B /* SystemTag.m */; };
 		941F26E718F80ADA00CFE40B /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F26E618F80ADA00CFE40B /* Event.m */; };
 		941F26EA18F80ADA00CFE40B /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F26E918F80ADA00CFE40B /* Tag.m */; };
+		941F26ED18F80D3E00CFE40B /* help-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 941F26EB18F80D3E00CFE40B /* help-button.png */; };
+		941F26EE18F80D3E00CFE40B /* help-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 941F26EC18F80D3E00CFE40B /* help-button@2x.png */; };
 		947A3CA018EED34400C276E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3C9F18EED34400C276E2 /* Foundation.framework */; };
 		947A3CA218EED34400C276E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA118EED34400C276E2 /* CoreGraphics.framework */; };
 		947A3CA418EED34400C276E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947A3CA318EED34400C276E2 /* UIKit.framework */; };
@@ -92,6 +94,8 @@
 		941F26E618F80ADA00CFE40B /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		941F26E818F80ADA00CFE40B /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		941F26E918F80ADA00CFE40B /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		941F26EB18F80D3E00CFE40B /* help-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-button.png"; sourceTree = "<group>"; };
+		941F26EC18F80D3E00CFE40B /* help-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-button@2x.png"; sourceTree = "<group>"; };
 		947A3C9C18EED34400C276E2 /* coolendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coolendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947A3C9F18EED34400C276E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		947A3CA118EED34400C276E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -335,6 +339,8 @@
 			children = (
 				947A3D3D18F49CC900C276E2 /* toolbar-week.png */,
 				947A3D3E18F49CC900C276E2 /* toolbar-week@2x.png */,
+				941F26EB18F80D3E00CFE40B /* help-button.png */,
+				941F26EC18F80D3E00CFE40B /* help-button@2x.png */,
 				947A3D3518F49C1500C276E2 /* toolbar-today.png */,
 				947A3D3618F49C1500C276E2 /* toolbar-today@2x.png */,
 				947A3D3718F49C1500C276E2 /* toolbar-tomorrow.png */,
@@ -437,6 +443,7 @@
 				941F26C618F55FA100CFE40B /* GooglePlus.bundle in Resources */,
 				947A3CAC18EED34400C276E2 /* InfoPlist.strings in Resources */,
 				947A3D3C18F49C1500C276E2 /* toolbar-tomorrow@2x.png in Resources */,
+				941F26ED18F80D3E00CFE40B /* help-button.png in Resources */,
 				947A3D3918F49C1500C276E2 /* toolbar-today.png in Resources */,
 				947A3D3A18F49C1500C276E2 /* toolbar-today@2x.png in Resources */,
 				947A3D3F18F49CC900C276E2 /* toolbar-week.png in Resources */,
@@ -448,6 +455,7 @@
 				947A3CDF18F2EAAF00C276E2 /* login-button@2x.png in Resources */,
 				947A3CE818F2ECB000C276E2 /* logo@2x.png in Resources */,
 				947A3CB718EED34400C276E2 /* Images.xcassets in Resources */,
+				941F26EE18F80D3E00CFE40B /* help-button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

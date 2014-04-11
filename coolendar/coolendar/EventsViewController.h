@@ -11,8 +11,13 @@
 
 @interface EventsViewController : UIViewController<NSFetchedResultsControllerDelegate>{
     
-    __weak IBOutlet UIBarButtonItem *logoutButton;
+    IBOutlet UITableView *eventsTableView;
+    IBOutlet UITextField *eventTextField;
+    IBOutlet UIButton *helpButton;
+    IBOutlet UIBarButtonItem *logoutButton;
 }
 - (IBAction)logout:(id)sender;
+
+- (void)createEvent:(NSString *)eventText;
 
 @end
