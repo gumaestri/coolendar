@@ -2,54 +2,53 @@
 //  Event.h
 //  coolendar
 //
-//  Created by Gustavo Andrade Maestri on 4/10/14.
+//  Created by Gustavo Andrade Maestri on 4/11/14.
 //  Copyright (c) 2014 Aerochimps. All rights reserved.
-//{"":false,"":true,"":false,"":true,"":true,"":false,,"tags":[]}
+//
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface Event : NSObject
+@class SystemTag, Tag;
 
+@interface Event : NSManagedObject
 
-@property (nonatomic,strong) NSString* id_;
-@property (nonatomic,strong) NSString* account;
-@property (nonatomic,strong) NSString* type;
-@property (nonatomic,strong) NSString* description;
-@property (nonatomic,strong) NSString* descriptionFormatted;
-
-@property (nonatomic,strong) NSString* registered;
-@property (nonatomic,strong) NSString* updated;
-@property (nonatomic,strong) NSString* dueGmtZero;
-@property (nonatomic,strong) NSString* dueDayGmtZero;
-@property (nonatomic,strong) NSString* dueMonthGmtZero;
-@property (nonatomic,strong) NSString* dueYearGmtZero;
-@property (nonatomic,strong) NSString* dueHour24GmtZero;
-@property (nonatomic,strong) NSString* dueHour12GmtZero;
-@property (nonatomic,strong) NSString* dueMinuteGmtZero;
-@property (nonatomic,strong) NSString* dueAmPmGmtZero;
-@property (nonatomic,strong) NSString* dueWeekDayGmtZero;
-@property (nonatomic,strong) NSString* dueTimezoned;
-@property (nonatomic,strong) NSString* dueDayTimezoned;
-@property (nonatomic,strong) NSString* dueMonthTimezoned;
-@property (nonatomic,strong) NSString* dueMonthNameTimezoned;
-@property (nonatomic,strong) NSString* dueYearTimezoned;
-@property (nonatomic,strong) NSString* dueHour24Timezoned;
-@property (nonatomic,strong) NSString* dueHour12Timezoned;
-@property (nonatomic,strong) NSString* dueMinuteTimezoned;
-@property (nonatomic,strong) NSString* dueAmPmTimezoned;
-@property (nonatomic,strong) NSString* dueWeekDayTimezoned;
-@property (nonatomic,strong) NSString* dueTimezonedFormattedDate;
-@property (nonatomic,strong) NSString* dueTimezonedFormattedTime;
-
-@property (nonatomic,strong) NSArray* systemTags;
-@property (nonatomic,strong) NSArray* tags;
-
-@property (nonatomic) BOOL important;
-@property (nonatomic) BOOL dueIsPast;
-@property (nonatomic) BOOL dueIsFuture;
-@property (nonatomic) BOOL dueIsToday;
-@property (nonatomic) BOOL dueIsTomorrow;
-@property (nonatomic) BOOL dueIsCurrentMonth;
-@property (nonatomic) BOOL notified;
+@property (nonatomic, retain) NSString * id_;
+@property (nonatomic, retain) NSString * account;
+@property (nonatomic, retain) NSString * type;
+@property (nonatomic, retain) NSString * description_;
+@property (nonatomic, retain) NSString * descriptionFormatted;
+@property (nonatomic, retain) NSDate * registered;
+@property (nonatomic, retain) NSDate * updated;
+@property (nonatomic, retain) NSDate * dueGmtZero;
+@property (nonatomic, retain) NSString * dueDayGmtZero;
+@property (nonatomic, retain) NSString * dueMonthGmtZero;
+@property (nonatomic, retain) NSString * dueYearGmtZero;
+@property (nonatomic, retain) NSString * dueHour24GmtZero;
+@property (nonatomic, retain) NSString * dueHour12GmtZero;
+@property (nonatomic, retain) NSString * dueMinuteGmtZero;
+@property (nonatomic, retain) NSString * dueAmPmGmtZero;
+@property (nonatomic, retain) NSString * dueWeekDayGmtZero;
+@property (nonatomic, retain) NSString * dueTimezoned;
+@property (nonatomic, retain) NSString * dueDayTimezoned;
+@property (nonatomic, retain) NSString * dueMonthTimezoned;
+@property (nonatomic, retain) NSString * dueMonthNameTimezoned;
+@property (nonatomic, retain) NSString * dueYearTimezoned;
+@property (nonatomic, retain) NSString * dueHour24Timezoned;
+@property (nonatomic, retain) NSString * dueHour12Timezoned;
+@property (nonatomic, retain) NSString * dueMinuteTimezoned;
+@property (nonatomic, retain) NSString * dueAmPmTimezoned;
+@property (nonatomic, retain) NSString * dueWeekDayTimezoned;
+@property (nonatomic, retain) NSString * dueTimezonedFormattedDate;
+@property (nonatomic, retain) NSString * dueTimezonedFormattedTime;
+@property (nonatomic, retain) NSNumber * important;
+@property (nonatomic, retain) NSNumber * dueIsPast;
+@property (nonatomic, retain) NSNumber * dueIsFuture;
+@property (nonatomic, retain) NSNumber * dueIsToday;
+@property (nonatomic, retain) NSNumber * dueIsTomorrow;
+@property (nonatomic, retain) NSNumber * dueIsCurrentMonth;
+@property (nonatomic, retain) NSNumber * notified;
+@property (nonatomic, retain) Tag *tag;
+@property (nonatomic, retain) SystemTag *systemTag;
 
 @end

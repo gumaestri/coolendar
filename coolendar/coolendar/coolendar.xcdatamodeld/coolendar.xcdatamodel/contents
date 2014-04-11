@@ -1,4 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="account" attributeType="String" syncable="YES"/>
+        <attribute name="description_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionFormatted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueAmPmGmtZero" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueAmPmTimezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueDayGmtZero" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueDayTimezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueGmtZero" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dueHour12GmtZero" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueHour12Timezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueHour24GmtZero" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueHour24Timezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueIsCurrentMonth" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dueIsFuture" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dueIsPast" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dueIsToday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dueIsTomorrow" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dueMinuteGmtZero" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueMinuteTimezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueMonthGmtZero" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueMonthNameTimezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueMonthTimezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueTimezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueTimezonedFormattedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueTimezonedFormattedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueWeekDayGmtZero" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueWeekDayTimezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueYearGmtZero" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dueYearTimezoned" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="important" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="notified" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="registered" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <attribute name="updated" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="systemTag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SystemTag" inverseName="event" inverseEntity="SystemTag" syncable="YES"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" inverseName="event" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="SystemTag" representedClassName="SystemTag" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="systemTag" inverseEntity="Event" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="tag" inverseEntity="Event" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Event" positionX="-63" positionY="-18" width="128" height="598"/>
+        <element name="Tag" positionX="-45" positionY="153" width="128" height="73"/>
+        <element name="SystemTag" positionX="-27" positionY="162" width="128" height="73"/>
+    </elements>
 </model>
